@@ -81,7 +81,7 @@ class SpringbootrestserviceApplicationTests {
 		lib.setAisle("322");
 		lib.setBook_name("Spring");
 		lib.setIsbn("sfe");
-		lib.setAuthor("Rahul Shetty");
+		lib.setAuthor("Jeffery");
 		lib.setId("sfe3b");
 		return lib;
 
@@ -99,6 +99,50 @@ class SpringbootrestserviceApplicationTests {
 
 		this.mockMvc.perform(post("/addBook").contentType(MediaType.APPLICATION_JSON).content(jsonString))
 				.andDo(print()).andExpect(status().isCreated()).andExpect(jsonPath("$.id").value(lib.getId()));
+
+	}
+
+	@Test
+	public void getBookByAuthorTest() throws Exception {
+		List<Library> li = new ArrayList<Library>();
+		li.add(buildLibrary());
+		li.add(buildLibrary());
+		when(repository.findAllByAuthor(any())).thenReturn(li);
+		this.mockMvc.perform(get("/book/author").param("authorname", "Jeffrey")).andDo(print())
+				.andExpect(status().isOk()).andExpect(jsonPath("$.length()", is(2)))
+				.andExpect(jsonPath("$.[0].id").value("sfe3b"));
+
+	}
+
+	@Test
+	public void updateBookTest() throws Exception {
+		Library lib = buildLibrary();
+		ObjectMapper map = new ObjectMapper();
+		String jsonString = map.writeValueAsString(UpdateLibrary());
+		when(libraryService.getBookById(any())).thenReturn(buildLibrary());
+		this.mockMvc.perform(put("/book/" + lib.getId()).contentType(MediaType.APPLICATION_JSON).content(jsonString))
+				.andDo(print()).andExpect(status().isOk()).andExpect(content().json(
+						"{\"book_name\":\"Boot\",\"id\":\"sfe3b\",\"isbn\":\"sfe\",\"aisle\":\"322\",\"author\":\"Musk\"}"));
+
+	}
+
+	@Test
+	public void deleteBookControllerTest() throws Exception {
+		when(libraryService.getBookById(any())).thenReturn(buildLibrary());
+		doNothing().when(repository).delete(buildLibrary());
+		this.mockMvc.perform(delete("/book").contentType(MediaType.APPLICATION_JSON).content("{\"id\" : \"sfe3b\"}"))
+				.andDo(print()).andExpect(status().isCreated()).andExpect(content().string("Book is deleted"));
+
+	}
+
+	public Library UpdateLibrary() {
+		Library lib = new Library();
+		lib.setAisle("322");
+		lib.setBook_name("Boot");
+		lib.setIsbn("rain");
+		lib.setAuthor("Musk");
+		lib.setId("rain322");
+		return lib;
 
 	}
 
