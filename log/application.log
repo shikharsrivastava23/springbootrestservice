@@ -1,0 +1,68 @@
+2021-07-25 11:51:04.037  INFO 6520 --- [restartedMain] c.e.s.SpringbootrestserviceApplication   : Starting SpringbootrestserviceApplication using Java 1.8.0-292 on DESKTOP-PIV96TE with PID 6520 (E:\PROJECTS\spring-api-testing\springbootrestservice\target\classes started by shikh in E:\PROJECTS\spring-api-testing\springbootrestservice)
+2021-07-25 11:51:04.042  INFO 6520 --- [restartedMain] c.e.s.SpringbootrestserviceApplication   : No active profile set, falling back to default profiles: default
+2021-07-25 11:51:04.480  INFO 6520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-25 11:51:04.508  INFO 6520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2021-07-25 11:51:04.806  INFO 6520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-25 11:51:04.808  INFO 6520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-25 11:51:04.812  INFO 6520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-07-25 11:51:04.834  INFO 6520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-25 11:51:04.835  INFO 6520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2021-07-25 11:51:04.940  INFO 6520 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-25 11:51:04.950  INFO 6520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2021-07-25 11:51:04.953  WARN 6520 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-25 11:51:04.999  INFO 6520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2021-07-25 11:51:05.001  INFO 6520 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-07-25 11:51:05.092  INFO 6520 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-25 11:51:05.094  INFO 6520 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-25 11:51:05.371  WARN 6520 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-25 11:51:05.601  INFO 6520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-25 11:51:05.617  INFO 6520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-25 11:51:05.628  INFO 6520 --- [restartedMain] c.e.s.SpringbootrestserviceApplication   : Started SpringbootrestserviceApplication in 1.792 seconds (JVM running for 60956.518)
+2021-07-25 11:51:05.637  INFO 6520 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-07-25 13:20:05.027  WARN 6520 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=1h20m29s909ms220µs200ns).
+2021-07-25 13:45:51.596  INFO 6520 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-25 13:45:51.631  INFO 6520 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2021-07-25 13:45:51.667  INFO 6520 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2021-07-25 13:45:52.334  INFO 6520 --- [restartedMain] c.e.s.SpringbootrestserviceApplication   : Starting SpringbootrestserviceApplication using Java 1.8.0-292 on DESKTOP-PIV96TE with PID 6520 (E:\PROJECTS\spring-api-testing\springbootrestservice\target\classes started by shikh in E:\PROJECTS\spring-api-testing\springbootrestservice)
+2021-07-25 13:45:52.337  INFO 6520 --- [restartedMain] c.e.s.SpringbootrestserviceApplication   : No active profile set, falling back to default profiles: default
+2021-07-25 13:45:53.632  INFO 6520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-25 13:45:53.690  INFO 6520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2021-07-25 13:45:54.428  INFO 6520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-25 13:45:54.463  INFO 6520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-25 13:45:54.473  INFO 6520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-07-25 13:45:54.494  INFO 6520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-25 13:45:54.495  INFO 6520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2147 ms
+2021-07-25 13:45:55.001  INFO 6520 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-25 13:45:55.013  INFO 6520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2021-07-25 13:45:55.018  WARN 6520 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-25 13:45:55.064  INFO 6520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2021-07-25 13:45:55.066  INFO 6520 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-07-25 13:45:55.155  INFO 6520 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-25 13:45:55.157  INFO 6520 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-25 13:45:55.862  WARN 6520 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-25 13:45:56.467  INFO 6520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-25 13:45:56.557  INFO 6520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-25 13:45:56.569  INFO 6520 --- [restartedMain] c.e.s.SpringbootrestserviceApplication   : Started SpringbootrestserviceApplication in 4.345 seconds (JVM running for 67847.587)
+2021-07-25 13:45:56.575  INFO 6520 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-07-25 13:45:59.185  INFO 2504 --- [main] .s.SpringbootrestserviceApplicationTests : Starting SpringbootrestserviceApplicationTests using Java 1.8.0-292 on DESKTOP-PIV96TE with PID 2504 (started by shikh in E:\PROJECTS\spring-api-testing\springbootrestservice)
+2021-07-25 13:45:59.193  INFO 2504 --- [main] .s.SpringbootrestserviceApplicationTests : No active profile set, falling back to default profiles: default
+2021-07-25 13:46:01.995  INFO 2504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-25 13:46:02.150  INFO 2504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interfaces.
+2021-07-25 13:46:05.134  INFO 2504 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-25 13:46:05.288  INFO 2504 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-25 13:46:05.414  INFO 2504 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-25 13:46:06.436  INFO 2504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-25 13:46:06.448  WARN 2504 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-25 13:46:07.317  INFO 2504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-25 13:46:07.378  INFO 2504 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-07-25 13:46:08.927  INFO 2504 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-25 13:46:08.946  INFO 2504 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-25 13:46:09.759  WARN 2504 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-25 13:46:12.392  INFO 2504 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-07-25 13:46:12.394  INFO 2504 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-07-25 13:46:12.397  INFO 2504 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-07-25 13:46:12.454  INFO 2504 --- [main] .s.SpringbootrestserviceApplicationTests : Started SpringbootrestserviceApplicationTests in 14.739 seconds (JVM running for 21.409)
+2021-07-25 13:46:13.750  INFO 2504 --- [main] c.e.s.controller.LibraryController       : Book does not exist so creating one
+2021-07-25 13:46:13.956  INFO 2504 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-25 13:46:13.967  INFO 2504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-07-25 13:46:13.994  INFO 2504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

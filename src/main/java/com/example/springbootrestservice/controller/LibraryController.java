@@ -64,10 +64,9 @@ public class LibraryController {
     }
 
     @GetMapping("/books")
-	public List<Library> getBooks()
-	{
-		return repository.findAll();
-	}
+    public List<Library> getBooks() {
+        return repository.findAll();
+    }
 
     @GetMapping("/book/{id}")
     public Library getBookById(@PathVariable(value = "id") String id) {
